@@ -52,7 +52,7 @@ const getOilPrice = async () => {
 
                 // สมมุติว่าทุก `FUEL` มี `PRICE_DATE` เดียวกัน
                 let priceDate = fuels[0].PRICE_DATE[0];
-                let message = `ราคาน้ำมันใน กรุงเทพ +- ~1.7 นครราชสีมา ประจำวันที่ ${priceDate}:\n`;
+                let message = `ราคาน้ำมันใน กรุงเทพ ประจำวันที่ ${priceDate}:\n`;
                 
                 fuels.forEach(fuel => {
                     message += `${fuel.PRODUCT[0]}: ${fuel.PRICE[0]} บาท\n`;
