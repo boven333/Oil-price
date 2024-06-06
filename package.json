@@ -1,0 +1,14 @@
+{
+  "name": "oil-price-notify",
+  "version": "1.0.0",
+  "description": "Notify oil price via LINE Notify",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "soap": "^0.30.0",
+    "xml2js": "^0.4.23"
+  }
+}
