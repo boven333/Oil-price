@@ -3,7 +3,7 @@ name: Oil Price Notify
 on:
   schedule:
     # Runs at 4:30 PM UTC every day (which is 11:30 PM in Thailand)
-    - cron: '30 16 * * *'
+    - cron: '40 16 * * *'
   workflow_dispatch:
 
 jobs:
