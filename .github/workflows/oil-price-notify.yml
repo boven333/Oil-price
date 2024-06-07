@@ -3,7 +3,7 @@ name: Oil Price Notify
 on:
   schedule:
     # Runs at 9:35 AM in Thailand
-    - cron: '35 2 * * *'
+    - cron: '50 2 * * *'
   workflow_dispatch:
 
 jobs:
