@@ -48,7 +48,7 @@ const getOilPrice = async () => {
                 }
 
                 const date = Date();
-                const cut = " GMT+0700 (Indochina Time)";
+                const cut = " GMT 0000 (Coordinated Universal Time)";
                 const dayDate = date.replace(cut, '')
                 const fuels = jsonResult.PTTOR_DS.FUEL;
                 console.log("OIL JSON", fuels);
