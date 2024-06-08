@@ -47,12 +47,15 @@ const getOilPrice = async () => {
                     return;
                 }
 
+                const date = Date();
+                const cut = " GMT+0700 (Indochina Time)";
+                const dayDate = date.replace(cut, '')
                 const fuels = jsonResult.PTTOR_DS.FUEL;
                 console.log("OIL JSON", fuels);
 
                 // สมมุติว่าทุก `FUEL` มี `PRICE_DATE` เดียวกัน
                 let priceDate = fuels[0].PRICE_DATE[0];
-                let message = `ราคาน้ำมันใน กรุงเทพ ประจำวันที่ ${priceDate}:\n`;
+                let message = `ราคาน้ำมันใน กรุงเทพ ประจำวันที่ ${dayDate}:\n`;
                 
                 fuels.forEach(fuel => {
                     message += `${fuel.PRODUCT[0]}: ${fuel.PRICE[0]} บาท\n`;
